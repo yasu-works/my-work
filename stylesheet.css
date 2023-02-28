@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+/* 全体のスタイルシート */
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #24292e;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.site-title {
+    line-height: 1px;
+}
+
+.site-title a {
+    display: block;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/* ヘッダーのスタイルシート */
+#header {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 4%;
+    height: 270px;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header li {
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+
+#header li a {
+    color: #24292e;
+}
+
+#header li a:hover {
+    opacity: 0.7;
+}
+
+.icon {
+    width: 20px;
+}
+
+/* mainvisualのスタイルシート */
+#mainvisual img {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+}
+
+#mainvisual {
+    margin-bottom: 80px;
+}
+
+/* Aboutのスタイルシート */
+#about li:first-child {
+    margin-bottom: 30px
+}
+
+#about ul {
+    margin-bottom: 30px;
+}
+
+#about p {
+    text-align: justify;
+}
+
+/* Worksのスタイルシート */
+#works li {
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+#works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* Newsのスタイルシート */
+#news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #c8c8c8;
+    margin-bottom: 20px;
+}
+
+#news dt {
+    width: 20%;
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+#news dd {
+    width: 80%;
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+/* contactのスタイルシート */
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#contact dt {
+    width: 15%;
+}
+
+#contact dd {
+    width: 85%;
+    margin-bottom: 15px;
+}
+#contact dd input,#contact dd textarea {
+    border: solid 1px #c8c8c8;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact dd textarea {
+    height: 10rem;
+}
+
+.button {
+    text-align: center;
+}
+
+.button input {
+    width: 200px;
+    color: #fff;
+    background-color: #24292e;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+}
+
+/* footerのスタイルシート */
+#footer {
+    background: #24292e;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .site-title {
+        margin-top: 20px;
+    }
+
+    #header li:first-child {
+        margin-left: 0;
+    }
+
+    #header li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+
+    #header ul {
+        padding: 10px 0;
+    }
+
+    .sec-title {
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        margin-bottom: 70px;
+    }
+
+    #works ul {
+        flex-direction: column;
+    }
+
+    #works li {
+        width: 100%;
+    }
+
+    #news dl {
+        flex-direction: column;
+    }
+
+    #news dt,#news dd {
+        padding: 15px;
+    }
+
+    #news dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    #news dd {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    #contact dl {
+        flex-direction: column;
+    }
+
+    #contact dt {
+        width: 100%;
+    }
+
+    #contact dd {
+        width: 100%;
+    }
+}
